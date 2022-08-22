@@ -1,0 +1,105 @@
+body{
+  overflow: scroll;
+}
+
+
+.slides{
+  display: grid;
+  align-items: flex-start;
+  justify-content: center;
+  grid-template-columns: repeat(2,auto);
+  grid-gap:25px;
+  border: 1px solid red;
+  
+  
+  
+  button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0px solid rgba(34, 34, 34, 0.287);
+    background: transparent;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  
+  }
+  
+
+}
+
+.slider2 {
+height: 500px;
+width: 264px;
+display: grid;
+grid-template-columns: repeat(1,auto);
+grid-gap:25px;
+overflow: hidden;
+position: relative;
+
+img {
+  width:264px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 1s ease-in-out;
+}
+
+.active{
+  border: 2px solid red;
+}
+
+.prev {
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+ .next {
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+}
+
+.slider1 {
+  overflow: hidden;
+  display: grid;
+   grid-template-columns: repeat(9,auto);
+   width:600px;
+  img {
+    width:600px;
+    height: 500px;
+    object-fit: cover;
+    transition: all 0.7s ease-in-out;
+  }
+  .prev {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-60%);
+  }
+   .next {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-60%);
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
